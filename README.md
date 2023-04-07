@@ -31,7 +31,7 @@ Execution:
 
 Class App:
 
-    - __init__ (continued): Initializes the necessary attributes for the class.
+    - __init__: Initializes the necessary attributes for the class.
         - self.cap: Creates a VideoCapture object to access the webcam.
         - self.count_since_last_seen: Keeps track of the time since the last face was detected.
         - self.locked_screen: Flag to indicate whether the screen is locked or not.
