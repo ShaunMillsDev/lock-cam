@@ -1,5 +1,3 @@
-"""
-
 This script implements a face detection application that locks the computer screen when a face is not detected in the webcam feed for a specified number of seconds.
 
 Imports:
@@ -30,19 +28,16 @@ Execution:
 
     - The script starts by calling the main function when run as a standalone script.
 
-"""
 
 Class App:
 
-    - __init__ (continued): Initializes the necessary attributes for the class.
-
+    - __init__: Initializes the necessary attributes for the class.
         - self.cap: Creates a VideoCapture object to access the webcam.
         - self.count_since_last_seen: Keeps track of the time since the last face was detected.
         - self.locked_screen: Flag to indicate whether the screen is locked or not.
         - self.user32: Loads the user32.dll library for interacting with the Windows API.
         - self.VK_LWIN, self.VK_L: Define the key codes for locking and unlocking the screen.
         - self.stop_flag: Flag to indicate whether the application should stop or not.
-    
     - lock_screen: Locks the computer screen using the Windows API and sets the self.locked_screen flag to True.
     - unlock_screen: Sets the self.locked_screen flag to False.
     - detect_faces: Main function for face detection and screen locking logic.
